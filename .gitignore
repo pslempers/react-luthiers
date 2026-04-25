@@ -1,3 +1,25 @@
+.DS_Store
+node_modules/
+dist/
+build/
+coverage/
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+*.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.env
+.env.local
+.env.development
+.env.test
+.env.production
+
 # This .gitignore is appropriate for repositories deployed to GitHub Pages and using
 # a Gemfile as specified at https://github.com/github/pages-gem#conventional
 
