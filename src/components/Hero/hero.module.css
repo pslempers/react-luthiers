@@ -17,8 +17,11 @@
 .hero h1 {
   /* text-shadow:0 0 10px var(--secondary); */
   padding:0.8em;
-  backdrop-filter:blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  /* backdrop-filter:blur(10px);
+  -webkit-backdrop-filter: blur(10px); */
+  background-color:var(--neutral);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 50px, black calc(100% - 50px), transparent);
+  mask-image: linear-gradient(0 degrees, transparent, black 50px, black calc(100% - 15%), transparent);
   width: 60%;
   
   border: 1px solid #00000000;
