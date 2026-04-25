@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Space+Grotesk:wght@300..700&display=swap');
+/*********************/
+/* APPLICATION STYLES */
+/* HTTP 5222 LAB 7 */
+/* PETER SLEMPERS */
+/*********************/
+
+/*********************/
+/* TABLE OF CONTENTS */
+/* 1. LINKS & COLORS */
+/* 2. HEADER & HEADINGS */
+/* 3. BODY */
+/* 4. FOOTER */
+/*********************/
+
+/* 1. COLORS */
+a {
+  all:unset;
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover {
+  color: var(--accent-hover);
+  transition:0.3s;
+}
+
+:root {
+    --text: #9ca3af;
+    --text-h: #f3f4f6;
+    --bg: #1C1B1B;
+    --border: #2e303a;
+    --code-bg: #94A3B8;
+    --accent: #E9C349;
+    --accent-hover: #E9C34980;
+    --accent-bg: #FFE088;
+    --accent-border: #574500;
+    --secondary: #AAABAF;
+    --tertiary: #1C1B1B;
+    --neutral: #0D0D0D;
+    --neutral-off: #141414;
+    --shadow:
+    rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+
+  
+  --heading: 'Manrope', system-ui, 'Segoe UI', sans-serif;
+  --body:'Inter', system-ui, 'Segoe UI', sans-serif;
+  --label:'Space Grotesk', system-ui, 'Segoe UI', sans-serif;
+  --sans: 'Manrope', system-ui, 'Segoe UI', sans-serif;
+  --mono: ui-monospace, monospace;
+  
+
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color-scheme: light dark;
+  color: var(--text);
+  /* background: var(--bg); */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  /* @media (max-width: 1024px) {
+    font-size: 16px;
+  } */
+}
+
+/* 2. HEADER & HEADINGS */
+#header {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background: #33333320; */
+  backdrop-filter:blur(10px);
+  width:100%;
+  /* max-width:1124px; */
+  margin:0;
+  /* padding:1em; */
+  /* position:fixed; */
+  z-index:1000;
+
+  border-bottom: 1px solid var(--accent);
+
+}
+
+  #logo {
+    color:var(--accent);
+    /* width:100%; */
+    padding:0.5em;
+    text-shadow: 0 0 0 none;
+    transition: 0.5s;
+  }
+  #logo:hover {
+    color: var(--accent-);
+  }
+
+  .navbar {
+    color:#fff;
+    padding-right:1em;
+    /* width:100% */
+  }
+  .navbar_list {
+    list-style-type: none;
+    padding-right:1em;
+    display: flex;
+    flex-wrap: column wrap;
+    flex: 1 1 auto;
+    gap: 2em;
+  }
+  .navbar__item > *{
+    color: white;
+    text-shadow: 0 0 0 none;
+    transition:0.5s;
+  }
+  .navbar__item:hover > *{
+    color: var(--accent);
+    text-shadow:0 0 1em var(--accent);
+  }
+
+#header > h2 {
+  font-size:40px;
+}
+
+h1,
+h2 {
+  font-family: var(--heading);
+  font-weight: 500;
+  color: var(--text-h);
+}
+
+h1 {
+  font-size: 2.5em;
+  color: var(--accent);
+  letter-spacing: -1.68px;
+  line-height: 1em;
+  margin: 1em;
+  /* @media (max-width: 1024px) {
+    font-size: 36px;
+    margin: 20px 0;
+  } */
+}
+h2 {
+  font-size: 24px;
+  line-height: 118%;
+  letter-spacing: -0.24px;
+  margin: 0 0 8px;
+  @media (max-width: 1024px) {
+    font-size: 20px;
+  }
+}
+h3 {
+  font-size: 18px;
+  color: var(--accent);
+  line-height: 118%;
+  letter-spacing: -0.18px;
+  margin: 0 0 8px;
+}
+p {
+  margin: 0;
+}
+
+
+/* 3. BODY */
+body {
+  margin: 0;
+}
+
+#root {
+  /* width: 1126px; */
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  border-inline: 1px solid var(--border);
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.main {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  gap:1em;
+  /* height:80vh; */
+
+}
+
+.partner img {
+  border: 1px solid #00000000;
+  transition:0.8s;
+}
+
+.partner img:hover {
+  border: 1px solid var(--accent);
+}
+
+/* 4. FOOTER */
+footer {
+  display:flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  bottom:0;
+  padding:1em;
+  border-top: 1px solid var(--accent);
+  margin-top:1em;
+}
+
+footer > h3 {
+  color: var(--accent);
+  font-size: 18px;
+  letter-spacing: 0.18px;
+}
+
+footer > p {
+  color: var(--secondary);
+  font-size: 14px;
+  letter-spacing: 0.14px;
+}
+
+/* 5. KEYFRAMES & ANIMATIONS */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
